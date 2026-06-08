@@ -1,17 +1,31 @@
-# 🕹️ Blind 75 LeetCode Journey
+# 🕹️ Blind 75 Sandbox
 
-Welcome to my Blind 75 preparation repository! I am tracking my algorithmic progress here using JavaScript and a custom retro terminal sandbox.
+A localized JavaScript development environment and solution archive for the **Blind 75** curriculum, wrapped in a low-fi, retro terminal aesthetic. 
 
-## 📊 Progress Dashboard
-- [ ] Arrays & Hashing (0 / 9)
-- [x] Two Pointers (1 / 3)
-- [ ] Sliding Window (0 / 4)
+Instead of relying on basic browser inspection tools or cloud-based text boxes, this repository combines a customized arcade-style CRT screen with a flat, modular directory of optimized algorithmic solutions.
 
 ---
 
-## 🛠️ Solved Problems
+## 🖥️ What is the Sandbox?
 
-| # | Problem | Difficulty | Solution | Time | Space |
-|---|---------|------------|----------|------|-------|
-| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [JavaScript](./01_arrays_strings/valid_palindrome.js) | $O(n)$ | $O(1)$ |
-| 1 | Two Sum | Easy | *In Progress* | - | - |
+The root of this project features a standalone `index.html` file designed to look like a vintage, green-phosphor terminal screen. 
+
+Built-in styling simulates a flickering cathode-ray monitor complete with scanlines and a moody, low-brightness color palette. It features a custom global `print()` utility that securely captures script outputs, formatting and rendering arrays, objects, and boolean evaluations directly onto your screen.
+
+---
+
+## 📂 Repository Architecture
+
+The project utilizes a centralized runtime workflow. Rather than scattering files across deep subdirectories, the codebase uses a flattened layout to keep execution simple and direct:
+
+```text
+blind-75-retro-sandbox/
+│
+├── .gitignore               # Excludes local IDE configurations
+├── README.md                # Project documentation
+├── index.html               # Central retro terminal UI & test harness
+│
+└── solutions/               # Monolithic directory for all algorithms
+    ├── 001_two_sum.js
+    ├── 125_valid_palindrome.js
+    └── ...

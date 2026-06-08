@@ -1,57 +1,45 @@
-  /* Retro Game Terminal Aesthetics */
-        body {
-            background-color: #121212; /* Dull obsidian black */
-            color: #4af626; /* Muted retro green phosphor */
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-        }
+/* 8-Bit Pixel Vibe: Dull & Muted Colors */
+body {
+    background-color: #1e1e24; /* Dull charcoal slate */
+    color: #a7a2a9; /* Muted vintage paper gray */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        /* The Arcade Monitor Frame */
-        .monitor {
-            width: 80%;
-            max-width: 800px;
-            height: 70vh;
-            background: #1a1a1a;
-            border: 20px solid #2d2d2d; /* Dull plastic/metal bezel */
-            border-radius: 20px;
-            box-shadow: inset 0 0 40px rgba(0, 0, 0, 1), 0 10px 30px rgba(0,0,0,0.8);
-            padding: 20px;
-            box-sizing: border-box;
-            position: relative;
-        }
+/* Pixel-art style border box */
+.pixel-container {
+    background-color: #141419; /* Darker tile black */
+    border: 4px solid #3a3845; /* Dull gray border */
+    box-shadow: 
+        0 4px 0 #141419, 
+        0 -4px 0 #141419, 
+        4px 0 0 #141419, 
+        -4px 0 0 #141419; /* Chunky 8-bit blocky outline */
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+}
 
-        /* Screen scanlines effect */
-        .screen {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            background-size: 100% 4px, 6px 100%;
-            overflow-y: auto;
-            padding: 10px;
-            box-sizing: border-box;
-        }
+h1 {
+    color: #cf8a4a; /* Dull retro copper/orange */
+    font-size: 24px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-        /* Terminal Header */
-        .header {
-            color: #ffb000; /* Muted retro amber */
-            margin-bottom: 20px;
-            border-bottom: 1px dashed #4af626;
-            padding-bottom: 5px;
-            font-weight: bold;
-        }
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #828489; /* Faded text */
+}
 
-        /* Output text styling */
-        .log-entry {
-            line-height: 1.5;
-            margin-bottom: 8px;
-            white-space: pre-wrap;
-        }
-
-        .system-msg {
-            color: #888888; /* Dull gray */
-        }
+.status-dot {
+    color: #5b8266; /* Muted green */
+}
