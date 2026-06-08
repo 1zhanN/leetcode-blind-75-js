@@ -19,6 +19,7 @@ function validParentheses(expression) {
  
         }
 
+        
     }if (stack.length > 0) {
         return false;
     }
